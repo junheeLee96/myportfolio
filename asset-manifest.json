@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/myportfolio/static/css/main.8efa89c2.css",
-    "main.js": "/myportfolio/static/js/main.75179bac.js",
+    "main.js": "/myportfolio/static/js/main.996d71ca.js",
     "static/js/787.1ed0c42c.chunk.js": "/myportfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/First_2.mp4": "/myportfolio/static/media/First_2.3dd7e4981b136a497fb0.mp4",
     "static/media/First_4.mp4": "/myportfolio/static/media/First_4.c4ed7361399bb112bd53.mp4",
     "static/media/momentum.mp4": "/myportfolio/static/media/momentum.85ae07aa340d1215467c.mp4",
+    "static/media/youtube2.mp4": "/myportfolio/static/media/youtube2.ae4d623eab3829ddafdc.mp4",
     "static/media/chat_2.mp4": "/myportfolio/static/media/chat_2.9271af7fabe82fe2193e.mp4",
     "static/media/Twitter_2.mp4": "/myportfolio/static/media/Twitter_2.7f017777eaad7814d52b.mp4",
     "static/media/game.mp4": "/myportfolio/static/media/game.d6ace6a0b2cc11cfc995.mp4",
     "static/media/First_3.mp4": "/myportfolio/static/media/First_3.f9a9616bfb3305a5ef49.mp4",
+    "static/media/youtube.mp4": "/myportfolio/static/media/youtube.6f0bf541c2f4f1b18513.mp4",
     "static/media/chat_1.mp4": "/myportfolio/static/media/chat_1.3851f15a8e9611ac4200.mp4",
     "static/media/Twitter_3.mp4": "/myportfolio/static/media/Twitter_3.0c9955445b8a317e9b1a.mp4",
     "static/media/Twitter_1.mp4": "/myportfolio/static/media/Twitter_1.81aa23d9d3cb55e4cdac.mp4",
@@ -27,11 +29,11 @@
     "static/media/firebaseimg.webp": "/myportfolio/static/media/firebaseimg.70a5a4cdd3ce4aa3022c.webp",
     "index.html": "/myportfolio/index.html",
     "main.8efa89c2.css.map": "/myportfolio/static/css/main.8efa89c2.css.map",
-    "main.75179bac.js.map": "/myportfolio/static/js/main.75179bac.js.map",
+    "main.996d71ca.js.map": "/myportfolio/static/js/main.996d71ca.js.map",
     "787.1ed0c42c.chunk.js.map": "/myportfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8efa89c2.css",
-    "static/js/main.75179bac.js"
+    "static/js/main.996d71ca.js"
   ]
 }
