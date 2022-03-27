@@ -23,17 +23,15 @@ const FContents = () => {
           className="rounded-[70%] lg:w-[15.1vw] lg:h-[25.1vh] w-[50vw] h-[25vh] absolute top-[28%] overflow-hidden"
         >
           <div
-            className={`z-[10] rounded-[70%] bg-black w-full h-full opacity-70 flex items-center justify-center absolute top-[-100%] transform translate-y-[${
-              MouseTransition * 100
-            }%] duration-300 cursor-pointer`}
+            className={`z-[10] rounded-[70%] bg-black w-full h-full opacity-70 flex items-center justify-center absolute top-[-100%]  duration-300 cursor-pointer`}
+            style={{ transform: `translateY(${MouseTransition * 100}%)` }}
           ></div>
           <a
             href="https://github.com/junheeLee96"
             target={"_blank"}
             rel="noreferrer"
-            className={`z-[10] rounded-[70%] text-[10vw] w-full h-full  flex items-center justify-center absolute top-[-100%] transform translate-y-[${
-              MouseTransition * 100
-            }%] duration-300 cursor-pointer`}
+            className={`z-[10] rounded-[70%] text-[10vw] w-full h-full  flex items-center justify-center absolute top-[-100%]  duration-300 cursor-pointer`}
+            style={{ transform: `translateY(${MouseTransition * 100}%)` }}
           >
             <FontAwesomeIcon icon={faGithub} style={{ color: "white" }} />
           </a>
