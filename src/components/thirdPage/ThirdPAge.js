@@ -88,13 +88,13 @@ const ThirdPAge = () => {
       {arr.map((item, idx) => (
         <div
           key={idx}
-          className="bg-white shadow-2xl	mb-14 lg:w-[900px] lg:min-h-[400px] w-[100vw] h-[90%] mt-14 flex flex-col	 justify-center items-center justify-between transform t 0.3s "
+          className="bg-white shadow-2xl 	mb-14 lg:w-[900px] lg:min-h-[10px] w-[100vw] h-[90%] mt-14 flex flex-col	 justify-center items-center justify-between transform t 0.3s "
         >
           <div className="w-full h-[20%] pl-[1vw] pr-[1vw] flex flex-col justify-center items-center ">
             <div>{item.title}</div>
             <div>{item.while}</div>
           </div>
-          <div className="w-full h-[75%] lg:grid lg:grid-cols-2 lg:gap-x-[5%] pl-[1vw] pr-[1vw] flex flex-col-reverse pr-[5%] pl-[5%] pt-[2px]	">
+          <div className="w-full h-[75%] lg:grid lg:grid-cols-2 lg:gap-x-[5%] pl-[1vw] pt-[5%] pr-[1vw] flex flex-col-reverse">
             <p className="lg:pt-0 pt-[2%]  pb-3">
               {item.content.split("\n").map((line) => {
                 return (
@@ -123,7 +123,7 @@ const ThirdPAge = () => {
               )}
             </p>
 
-            <Video item={item} idx={idx} />
+            <Video video={item.vid} />
           </div>
         </div>
       ))}
