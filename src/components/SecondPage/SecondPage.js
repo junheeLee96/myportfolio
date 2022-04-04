@@ -8,6 +8,7 @@ import mysqlimg from "../../img/mysqlimg.png";
 import githubimg from "../../img/githubimg.png";
 import herokuimg from "../../img/herokuimg.png";
 import reduximg from "../../img/reduximg.png";
+import nextimg from "../../img/next3.png";
 import javascriptimg from "../../img/javascriptimg.png";
 import firebaseimg from "../../img/firebaseimg.webp";
 import qnetimg from "../../img/qnetimg.png";
@@ -134,12 +135,12 @@ const SecondPage = () => {
           <div className="text-lg">Learning</div>
           <div className="flex items-center flex-col text-sm">
             <img
-              src={reduximg}
+              src={nextimg}
               alt=""
               style={imgStyle}
               className="lg:w-[3vw] lg:h-[5vh] w-[6vw] h-[4vh] mt-[15%]"
             />
-            <div>Redux</div>
+            <div>Next.js</div>
           </div>
         </div>
       </div>
