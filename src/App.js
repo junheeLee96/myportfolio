@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import FirstPage from "./components/FirstPage/FirstPage";
 import Foot from "./components/footer/Foot";
 import SecondPage from "./components/SecondPage/SecondPage";
@@ -12,11 +12,34 @@ function App() {
     setScrollY(window.pageYOffset); // window 스크롤 값을 ScrollY에 저장
   };
 
+  const FirstPageRef = useRef(null);
+  const SecondPageRef = useRef(null);
+  const ThirdPageRef = useRef(null);
+  const FootRef = useRef(null);
+  const HeaderRef = useRef(null);
+
+  const [HeightOfComponents, setHeightOfComponents] = useState({
+    Header: 0,
+    First: 0,
+    Second: 0,
+    Third: 0,
+    Foot: 0,
+  });
+
+  useEffect(() => {
+    setHeightOfComponents({
+      Header: HeaderRef.current.clientHeight,
+      First: FirstPageRef.current.clientHeight,
+      Second: SecondPageRef.current.clientHeight,
+      Third: ThirdPageRef.current.clientHeight,
+      Foot: FootRef.current.clientHeight,
+    });
+  }, []);
+
   const onHeaderClick = (e) => {
     let {
       target: { id },
     } = e;
-    console.log(id);
     if (id === "first") {
       window.scrollTo({
         top: 0,
@@ -26,14 +49,18 @@ function App() {
     }
     if (id === "second") {
       window.scrollTo({
-        top: 872,
+        top: HeightOfComponents.First - HeightOfComponents.Header,
         behavior: "smooth",
       });
       setScrollY(872);
     }
     if (id === "third") {
       window.scrollTo({
-        top: 1509,
+        top:
+          HeightOfComponents.Second +
+          HeightOfComponents.First +
+          50 -
+          HeightOfComponents.Header,
         behavior: "smooth",
       });
       setScrollY(1509);
@@ -53,10 +80,10 @@ function App() {
     <div className="m-0 p-0">
       <ThemeContext.Provider value={{ ScrollY, onHeaderClick }}>
         {/* <Header /> */}
-        <FirstPage />
-        <SecondPage />
-        <ThirdPAge />
-        <Foot />
+        <FirstPage FirstPageRef={FirstPageRef} HeaderRef={HeaderRef} />
+        <SecondPage SecondPageRef={SecondPageRef} />
+        <ThirdPAge ThirdPageRef={ThirdPageRef} />
+        <Foot FootRef={FootRef} />
       </ThemeContext.Provider>
     </div>
   );

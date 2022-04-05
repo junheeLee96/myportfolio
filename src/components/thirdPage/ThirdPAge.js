@@ -75,9 +75,12 @@ const arr = [
   },
 ];
 
-const ThirdPAge = () => {
+const ThirdPAge = ({ ThirdPageRef }) => {
   return (
-    <div className=" bg-cyan-600	 w-screen  flex flex-col justify-center items-center  z-2 !important">
+    <div
+      className="ThirdPAge bg-cyan-600	 w-screen  flex flex-col justify-center items-center  z-2 !important"
+      ref={ThirdPageRef}
+    >
       {/* <Th_ZeroBlock />
       <Th_firstBlock />
       <Th_SecBlock />

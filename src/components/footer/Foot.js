@@ -2,9 +2,12 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const Foot = () => {
+const Foot = ({ FootRef }) => {
   return (
-    <div className="w-[100vw] h-[10vh] bg-black text-white flex  flex-col justify-center items-center">
+    <div
+      className="w-[100vw] h-[10vh] bg-black text-white flex  flex-col justify-center items-center"
+      ref={FootRef}
+    >
       <a href="https://github.com/junheeLee96" target={`_blank`}>
         <FontAwesomeIcon
           icon={faGithub}

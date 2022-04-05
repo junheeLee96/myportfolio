@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../ThemeContext";
 
-const Header = () => {
+const Header = ({ HeaderRef }) => {
   const { ScrollY, onHeaderClick } = useContext(ThemeContext);
 
   return (
@@ -11,6 +11,7 @@ const Header = () => {
           ? "w-[100vw] h-[10vh] relative z-10 lg:text-[30px] text-lg flex justify-center"
           : "w-[100vw] h-[10vh] fixed z-10 lg:text-[30px] text-lg flex justify-center  text-black bg-white shadow-lg"
       }`}
+      ref={HeaderRef}
     >
       <div className="lg:w-[1100px] w-[93vw] h-[10vh] flex flex-row justify-between justify-center items-center ml-[2vw] mr-[2vw]">
         <div>JJUNI</div>

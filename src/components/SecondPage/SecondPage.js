@@ -6,21 +6,22 @@ import htmlimg from "../../img/htmlimg.png";
 import nodejsimg from "../../img/nodejsimg.jpg";
 import mysqlimg from "../../img/mysqlimg.png";
 import githubimg from "../../img/githubimg.png";
-import herokuimg from "../../img/herokuimg.png";
-import reduximg from "../../img/reduximg.png";
 import nextimg from "../../img/next3.png";
 import javascriptimg from "../../img/javascriptimg.png";
 import firebaseimg from "../../img/firebaseimg.webp";
 import qnetimg from "../../img/qnetimg.png";
 import li3img from "../../img/li3.png";
 
-const SecondPage = () => {
+const SecondPage = ({ SecondPageRef }) => {
   const imgStyle = {
     borderRadius: "70%",
     overflow: "hidden",
   };
   return (
-    <div className="w-[100vw] flex items-center flex-col pt-[30px] mb-[50px]">
+    <div
+      className="w-[100vw] flex items-center flex-col pt-[30px] mb-[50px]"
+      ref={SecondPageRef}
+    >
       <div className="text-2xl">ABILITIES</div>
       <div className="lg:w-3/5 w-[93vw] flex justify-around justify-items-center pt-[40px] shadow-2xl">
         <div className="flex flex-col justify-center items-center ">
