@@ -22,8 +22,8 @@ const arr = [
     while: "(3일)",
     content:
       "Youtube API를 이용한 Youtube 클론입니다.  \n\n Youtube API를 이용해 추천 영상을 불러오는 기능과 영상 재생, 영상 검색 기능을 넣은 웹입니다. \n grid를 사용해 반응형으로 제작하였습니다.",
-    sourceURL: "https://github.com/junheeLee96/react-youtube",
-    projectURL: "https://junheelee96.github.io/react-youtube/",
+    sourceURL: "https://github.com/junheeLee96/react-tube",
+    projectURL: "https://junyoutube.netlify.app",
   },
   {
     id: 1,
